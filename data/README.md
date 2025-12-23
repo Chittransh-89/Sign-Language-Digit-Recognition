@@ -39,7 +39,7 @@ Sign-Language-Digit-Recognition/<br>
 -> Follow these steps to run the project locally:<br>
 Clone the repository<br>
 
-git clone https://github.com/your-username/sign-language-digit-recognition.git<br>
+git clone https://github.com/Chittransh-89/Sign-Language-Digit-Recognition.git<br>
 cd sign-language-digit-recognition<br>
 
 
