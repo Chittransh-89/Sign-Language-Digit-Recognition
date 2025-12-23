@@ -1,1 +1,0 @@
-# Sign-Language-Digit-Recognition
