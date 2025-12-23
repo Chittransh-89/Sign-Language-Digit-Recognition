@@ -1,75 +1,104 @@
-# Sign-Language-Digit-Recognition <br>
-📌 Overview<br>
+✋ Sign Language Digit Recognition Project<br>
+📌 Description<br>
+<br>
+This project uses an image dataset of hand gesture digits representing numbers 0 to 9 in sign language format.<br>
 
--> This project focuses on recognizing hand sign digits (0–9) from images using Convolutional Neural Networks (CNNs).<br>
--> The goal is to build a machine learning system that can accurately classify sign language digits, which can be extended towards assistive technologies for the hearing-impaired.<br>
--> Model is trained on a labeled image dataset of hand gestures and is capable of making predictions on unseen images and real-time inputs.<br>
+Each class corresponds to a digit and contains grayscale or RGB images of hand signs captured under varying conditions. The project uses a Convolutional Neural Network (CNN) to classify the images into the correct digit class.<br>
 
 🧠 Model & Approach<br>
+<br>
+Model Type: Convolutional Neural Network (CNN)<br>
 
--> Model Type: Convolutional Neural Network (CNN)<br>
--> Framework: TensorFlow / Keras<br>
--> Input: Hand gesture images representing digits (0–9)<br>
--> Output: Predicted digit class<br>
+Framework: TensorFlow / Keras<br>
+
+Input: Images of hand gestures (0–9)<br>
+
+Output: Predicted digit class<br>
 
 Key Steps:<br>
 
--> Image resizing and normalization<br>
--> Dataset splitting (training & testing)<br>
--> CNN model design with convolution, pooling, and dense layers<br>
--> Model training over multiple epochs<br>
--> Performance evaluation using accuracy and confusion matrix<br>
+Image preprocessing: resizing and normalization<br>
 
-The focus was on building a stable and understandable CNN pipeline, not blindly increasing complexity.<br>
+Dataset split: training & testing<br>
 
-📂 Project Structure<br>
-Sign-Language-Digit-Recognition/<br>
-│<br>
-├── dataset/                 # Image dataset (0–9 folders)<br>
-├── src/<br>
-│   ├── new_training.py             # Model training script<br>
-│   ├── new_testing.py              # Model testing & evaluation<br>
-│   ├── realtime_test.py           # Prediction on new images<br>
-│<br>
-├── requirements.txt         # Required Python libraries<br>
-├── README.md                # Project documentation<br>
+CNN architecture: convolution + pooling + dense layers<br>
 
-⚙️ How to Run<br>
+Model training over multiple epochs<br>
 
--> Follow these steps to run the project locally:<br>
-Clone the repository<br>
+Performance evaluation using accuracy and confusion matrix<br>
 
-git clone https://github.com/your-username/sign-language-digit-recognition.git<br>
-cd sign-language-digit-recognition<br>
+Focused on realistic performance and understandable model pipeline rather than overfitting.<br><br>
 
+📂 Dataset Structure<br>
+data/<br>
+├── 0/<br>
+├── 1/<br>
+├── 2/<br>
+├── 3/<br>
+├── 4/<br>
+├── 5/<br>
+├── 6/<br>
+├── 7/<br>
+├── 8/<br>
+└── 9/<br>
 
--> Install dependencies<br>
-pip install -r requirements.txt<br>
+<br>
+Each folder contains images corresponding to the digit label.<br>
+<br>
+📥 Dataset Source<br>
+<br>
+The dataset can be either:<br>
 
+Collected manually using a camera/webcam<br>
+OR<br>
 
--> Train the model<br>
-python src/new_training.py<br>
+Sourced from a publicly available sign language digit dataset<br>
 
--> Test / Predict<br>
-python src/new_testing.py<br>
+Exact link of dataset - https://www.kaggle.com/datasets/pranavsharma1670/sign-language-recognition-dataset <br>
+<br>
+🚫 Why dataset is not included<br>
+<br>
+The dataset is not uploaded to GitHub to:<br>
+
+Avoid large repository size<br>
+
+Respect dataset licensing (if applicable)<br>
+
+Follow good version control practices<br>
+<br><br>
+🔁 How to recreate the dataset<br>
+<br>
+Obtain or create a sign language digit dataset (0–9)<br>
+
+Place the images in the folder structure shown above<br>
+
+Ensure image dimensions match the preprocessing step in the code<br>
+
+Once the dataset is placed correctly, the training and testing scripts will run as expected.<br>
+
+<br>
 
 📊 Results<br>
+<br>
+Model achieves good classification performance on most digit classes<br>
 
--> The model achieves good classification performance on most digit classes.<br>
--> A confusion matrix is used to analyze correct and incorrect predictions.<br>
--> Some digits with visually similar hand shapes require extra effort to predict accurately.<br>
--> The project prioritizes realistic performance over fake 99% accuracy claims.<br>
+Confusion matrix highlights digits that are visually similar and harder to predict<br>
 
-🚀 Future Improvements<br>
+Focus is on accuracy that is realistic and replicable<br>
+<br><br>
+🚀 Future Improvements<br><br>
 
--> Improve detection of confusing digits (e.g., 8, 9, 4)<br>
--> Use larger and more diverse datasets<br>
--> Implement real-time webcam detection<br>
--> Experiment with deeper CNN architectures<br>
--> Extend from digits to full sign language alphabets<br>
+Improve recognition of visually confusing digits<br>
 
-🧑‍💻 Author<br>
+Use larger and more diverse datasets<br>
+
+Add real-time webcam prediction<br>
+
+Experiment with deeper CNN architectures<br>
+
+Extend from digits to full sign language alphabet<br><br>
+
+🧑‍💻 Author<br><br>
 
 Chittransh<br>
-B.Tech Student | Machine Learning Enthusias<br>
-Focused on practical AI projects and real-world problem solving.<br>
+B.Tech Student | Machine Learning & AI Enthusiast<br>
