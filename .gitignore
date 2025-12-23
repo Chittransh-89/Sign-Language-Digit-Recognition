@@ -1,0 +1,12 @@
+# Python cache files
+__pycache__/
+*.pyc
+
+# Virtual environment
+sign/
+
+# Dataset folder
+New_Dataset/
+
+# Saved model files
+new_training.keras
